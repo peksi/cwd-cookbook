@@ -1,8 +1,6 @@
 import { List, ListItem, ListIcon, Box, Heading } from "@chakra-ui/react";
 import React from "react";
-import { MdCheckCircle, MdSettings } from "react-icons/md";
-import { ImHtmlFive } from "react-icons/im";
-import { SiCsswizardry, SiJavascript, SiReact } from "react-icons/si";
+import { SiReact } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { BsCodeSlash } from "react-icons/bs";
 
