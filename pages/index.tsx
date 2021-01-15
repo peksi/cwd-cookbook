@@ -7,6 +7,7 @@ import React from "react";
 import { CSSSection } from "../sections/CSS";
 import { CombineSkillsSection } from "../sections/CombineSkills";
 import { Fundamentals } from "../sections/Fundamentals";
+import { JSSection } from "../sections/JS";
 
 /*
 
@@ -57,6 +58,7 @@ export default function Home() {
 
           <HTMLSection />
           <CSSSection />
+          <JSSection />
           <ReactSection />
           <CombineSkillsSection />
         </Box>

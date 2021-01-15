@@ -9,6 +9,64 @@ export const JSSection = () => {
         JS
       </Heading>
       <CodeBox
+        heading="Variables"
+        code={`
+var year = 2020;
+year = 2021;
+console.log(2021); // prints 2021
+
+const cat = "Garfield"; // immutable
+cat = Tigger // 🚨 Error
+
+let city = "Helsinki"; // mutable
+city = "Stockholm"; // ✅
+          `}
+        description={
+          "With ES6 there has been new ways to declare variables with const and let"
+        }
+      />
+      <CodeBox
+        heading="Functions"
+        code={`
+// ES5 way of typing out things
+
+function double(parameter) {
+    return parameter * 2;
+}
+
+double(4) // outputs 8
+
+
+// ES6 way of typing out things. More common nowadays.
+
+const double = (parameter) => {
+    return parameter * 2;
+}
+
+double(4) // outputs 8
+
+          `}
+        description={
+          "(There are some semantic details that we won't go into. Output is equal.)"
+        }
+      />
+      <CodeBox
+        heading="Ternary operation"
+        code={`
+// ternary operation
+
+// condition ? truthy output : falsy output;
+
+const weekday = "Monday";
+const info = weekday == "Monday" ? "No lecture!" : "Go to the lecture!";
+
+console.log(info) // outputs Monday
+          `}
+        description={
+          "(There are some semantic details that we won't go into. Output is equal.)"
+        }
+      />
+      <CodeBox
         heading="Creating empty iterable array"
         code={`
 const iterableArray = Array(100).fill(undefined)          
