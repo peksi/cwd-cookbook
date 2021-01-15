@@ -6,6 +6,7 @@ import { HTMLSection } from "../sections/HTML";
 import React from "react";
 import { CSSSection } from "../sections/CSS";
 import { CombineSkillsSection } from "../sections/CombineSkills";
+import { Fundamentals } from "../sections/Fundamentals";
 
 /*
 
@@ -51,6 +52,8 @@ export default function Home() {
           <Heading textAlign="center">
             Contemporary Web Development Cook Book
           </Heading>
+
+          <Fundamentals />
 
           <HTMLSection />
           <CSSSection />
