@@ -5,6 +5,7 @@ import { ReactSection } from "../sections/React";
 import { HTMLSection } from "../sections/HTML";
 import React from "react";
 import { CSSSection } from "../sections/CSS";
+import { CombineSkillsSection } from "../sections/CombineSkills";
 
 /*
 
@@ -54,9 +55,7 @@ export default function Home() {
           <HTMLSection />
           <CSSSection />
           <ReactSection />
-          <Heading as="h2" size="lg">
-            Combining your skills
-          </Heading>
+          <CombineSkillsSection />
         </Box>
       </main>
       <Divider my={8} />

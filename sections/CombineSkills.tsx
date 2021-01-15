@@ -17,6 +17,9 @@ const AnimalList = () => {
 export const CombineSkillsSection = () => {
   return (
     <>
+      <Heading as="h2" size="lg">
+        Combining your skills
+      </Heading>
       <CodeBox
         heading="Map array to React components"
         code={`
