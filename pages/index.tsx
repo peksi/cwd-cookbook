@@ -46,7 +46,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Box maxW={"40rem"} margin={"auto"}>
+        <Box maxW={"40rem"} margin={"auto"} px={"1rem"}>
           <Box fontSize="70px" textAlign="center">
             🍲📖
           </Box>
