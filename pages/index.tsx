@@ -20,11 +20,6 @@ event triggers
 * on keypress
 
 
-:hover
-:active
-
-pseudo classess
-
 
 useEffect hook
 useState hook
