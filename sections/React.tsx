@@ -1,6 +1,16 @@
-import { Heading, Box, Code, Divider } from "@chakra-ui/react";
-import React from "react";
+import { Heading, Box, Code, Divider, Button } from "@chakra-ui/react";
+import React, { useState } from "react";
 import { CodeBox } from "../components/CodeBox";
+
+const CountExample = () => {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <Button onClick={() => setCount(count + 1)}>Click me</Button>
+    </div>
+  );
+};
 
 export const ReactSection = () => {
   return (
@@ -51,6 +61,37 @@ ReactDOM.render(<App />, root);
       <Heading as="h2" size="lg">
         React hooks
       </Heading>
+      <Box mt={4} fontWeight="bold">
+        What and why?
+      </Box>
+      <Box>
+        When you declare something in React, it will be loaded only once when
+        the component is rendered. However if you want something to change along
+        the way so that React knows it, you need to wrap it in a hook!
+      </Box>
+      <CodeBox
+        heading="useState"
+        description="Whenever the button is clicked, the function gets triggered, the {count} gets updated and it renders the element again!"
+        code={`
+import React, { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+`}
+      />
+      <Box border="1px solid black" rounded="md" padding={4} maxW="20rem">
+        <CountExample />
+      </Box>
 
       <Divider />
     </>
