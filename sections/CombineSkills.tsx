@@ -8,7 +8,7 @@ const AnimalList = () => {
   return (
     <ul>
       {animals.map((animal) => {
-        return <li>{animal}</li>;
+        return <li key={`animal-${animal}`}>{animal}</li>;
       })}
     </ul>
   );
