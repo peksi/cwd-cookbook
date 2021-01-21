@@ -92,6 +92,33 @@ function Example() {
       <Box border="1px solid black" rounded="md" padding={4} maxW="20rem">
         <CountExample />
       </Box>
+      <CodeBox
+        heading="useEffect"
+        code={`
+import React, { useEffect } from 'react';
+
+const YourReactComponent = () => {
+
+  useEffect(() => {
+    // this will happen every time your function gets rerendered
+  })
+
+  useEffect(() => {
+    // this will trigger only on the initial render
+  }, [])
+
+  useEffect(() => {
+    // this will trigger only when the variable1 gets changed 
+  }, [variable1])
+
+  return (
+    <div>👀</div>
+  )
+}
+
+        `}
+        description="By using this hook you tell React that your component needs to do something after render. It will run after every render, unless otherwise specified (using the second parameter as an array)."
+      />
 
       <Divider />
     </>
